@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <h1>Register</h1>
+        <link rel="stylesheet" href="style.css">
+        <script src="./form.js" defer></script>
+    </head>
+<body>
+    <main style= "position: relative; left:450px; color: antiquewhite;">
+    <div class="container">
+    
+    <form name="myForm" id="form"  onsubmit="">
+        <div class="row">
+            <div class="col-20">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-80">
+              <input type="text" id="fname" name="firstname"  min="1" placeholder="Your firstname">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-20">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-80">
+              <input type="text" id="lname" name="lastname"  min="1" placeholder="Your lastname">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-20">
+              <label for="uname">Username</label>
+            </div>
+            <div class="col-80">
+              <input type="text" id="uname" name="username" placeholder="Your Username">
+            </div>
+          </div>  
+          
+          <div class="row">
+            <div class="col-20">
+              <label for="pass">Password</label>
+            </div>
+            <div class="col-80">
+              <input type="password" id="pass" name="password"   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="(more than 8 char)"  minlength="8">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-20">
+              <label for="age">Age</label>
+            </div>
+            <div class="col-80">
+              <input type="number" id="age" name="age" min="18" max="110" placeholder="Your age(>=18years**))">
+            </div>
+          </div>
+
+            <div class="row">
+            <div class="col-20">
+              <label for="country">Country</label>
+            </div>
+            <div class="col-80">
+              <select id="country" name="country">
+                <option value=" "></option>
+                <option value="thailand">Thailand</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="cambodia">Cambodia</option>
+                <option value="singapore">Singapore</option>
+                <option value="malaysia">Malaysia</option>
+                <option value="brunei">Brunei</option>
+                <option value="philipines">Philipines</option>
+                <option value="laos">Laos</option>
+                <option value="myanmar">Myanmar</option>
+                <option value="etc">etc.</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-20">
+              <label for="mail">E-mail</label>
+            </div>
+            <div class="col-80">
+              <input type="email" id="mail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your E-mail address"><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+           
+
+          <div>
+ 
+              <input type="submit" value="Submit" id="submit">
+         
+            <!-- <input type="submit" name="create" value="Submit"> -->
+            
+          </div>
+        </form>
+    
+    </div>
+    </main>
+
+</body>
+</html> 
